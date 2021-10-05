@@ -6,34 +6,73 @@ This study guide contains various links to official documentation in order to ge
 
 ### [Implement initial configuration of Azure Active Directory](https://docs.microsoft.com/en-us/learn/modules/implement-initial-configuration-of-azure-active-directory)
 - Azure Active Directory roles
-    - [Understand roles ](https://docs.microsoft.com/en-us/azure/active-directory/roles/concept-understand-roles)
-    - [Compare Azure and Azure AD Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
-    - [Roles for Microsoft 365 services in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/roles/m365-workload-docs)
-    - [Assign Azure AD roles to users](https://docs.microsoft.com/en-us/azure/active-directory/roles/manage-roles-portal)
-    - [Use Azure AD groups to manage role assignments](https://docs.microsoft.com/en-us/azure/active-directory/roles/groups-concept)
-    - [Azure AD built-in roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)
-    - [Custom Roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/custom-create)
-    - [Develop a security plan](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-planning)
-    - [Establish emergency accounts](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access)
+    - [Understand roles ](https://docs.microsoft.com/en-us/azure/active-directory/roles/concept-understand-roles)  
+    There are about 60 Azure Active Directory (Azure AD) built-in roles, which are roles with a fixed set of role permissions. To supplement the built-in roles, Azure AD also supports custom roles. Azure AD roles are different from other Microsoft 365 roles.  
+    ![](/images/role-overlap-diagram.png)
+    - [Compare Azure and Azure AD Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)  
+    Explain the difference between Azure roles, Azure Active Directory (Azure AD) roles and Classic subscription administrator roles  
+    ![](/images/rbac-admin-roles.png)
+    - [Roles for Microsoft 365 services in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/roles/m365-workload-docs)  
+    All products in Microsoft 365 can be managed with administrative roles in Azure Active Directory (Azure AD). Some products also provide additional roles that are specific to that product
+    - [Assign Azure AD roles to users](https://docs.microsoft.com/en-us/azure/active-directory/roles/manage-roles-portal)  
+    To grant access to users in Azure Active Directory (Azure AD), you assign Azure AD roles. A role is a collection of permissions.
+    - [Use Azure AD groups to manage role assignments](https://docs.microsoft.com/en-us/azure/active-directory/roles/groups-concept)  
+    Azure Active Directory (Azure AD) lets you target Azure AD groups for role assignments. Assigning roles to groups can simplify the management of role assignments in Azure AD with minimal effort from your Global Administrators and Privileged Role Administrators.
+    ![](/images/role-assignable-group.png)
+    - [Azure AD built-in roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/permissions-reference)  
+    This article lists the Azure AD built-in roles you can assign to allow management of Azure AD resources.
+    - [Custom Roles](https://docs.microsoft.com/en-us/azure/active-directory/roles/custom-create)  
+    This article describes how to create new custom roles in Azure Active Directory (Azure AD). For the basics of custom roles, see the [custom roles overview](https://docs.microsoft.com/en-us/azure/active-directory/roles/custom-overview). The role can be assigned either at the directory-level scope or an app registration resource scope only.  
+    ![](/images/rbac-overview.png)
+    - [Develop a security plan](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-planning)  
+    Microsoft recommends that you develop and follow a roadmap to secure privileged access against cyber attackers.
+    - [Establish emergency accounts](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access)  
+    It is important that you prevent being accidentally locked out of your Azure Active Directory (Azure AD) organization because you can't sign in or activate another user's account as an administrator. You can mitigate the impact of accidental lack of administrative access by creating two or more emergency access accounts in your organization.
 - Custom domains
-    - [Add your custom domain name](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-custom-domain)
-    - [Managing custom domain names](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-manage)
-    - [Verify a custom subdomain](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-verify-custom-subdomain)
-    - [Self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup)
+    - [Add your custom domain name](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-custom-domain)  
+    Every new Azure AD tenant comes with an initial domain name, <domainname>.onmicrosoft.com. You can't change or delete the initial domain name, but you can add your organization's names. Adding custom domain names helps you to create user names that are familiar to your users, such as alain@contoso.com.
+    - [Managing custom domain names](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-manage)  
+        - Set the primary domain name for your Azure AD organization
+        - Add custom domain names to your Azure AD organization
+        - Add subdomains of a custom domain
+        - What to do if you change the DNS registrar for your custom domain name
+        - Delete a custom domain name
+    - [Verify a custom subdomain](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-verify-custom-subdomain)  
+    After a root domain is added to Azure Active Directory (Azure AD), all subsequent subdomains added to that root in your Azure AD organization automatically inherit the authentication setting from the root domain. However, if you want to manage domain authentication settings independently from the root domain settings, you can now with the Microsoft Graph API. For example, if you have a federated root domain such as contoso.com, this article can help you verify a subdomain such as child.contoso.com as managed instead of federated.
+    - [Self-service sign-up for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/directory-self-service-signup)  
+    This article explains how to use self-service sign-up to populate an organization in Azure Active Directory (Azure AD). If you want to take over a domain name from an unmanaged Azure AD organization, see [Take over an unmanaged tenant as administrator](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/domains-admin-takeover).
 - Device registration
-    - [Azure AD registered devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register)
-    - [Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join)
-    - [Hybrid Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid)
-    - [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/azuread-join-sso)
+    - [Azure AD registered devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-register)  
+    The goal of Azure AD registered devices is to provide your users with support for the bring your own device (BYOD) or mobile device scenarios. In these scenarios, a user can access your organization’s resources using a personal device.  
+    ![](/images/azure-ad-registered-device.png)
+    - [Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join)  
+    Azure AD join is primarily intended for organizations that do not have an on-premises Windows Server Active Directory infrastructure  
+    ![](/images/azure-ad-joined-device.png)
+    - [Hybrid Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/concept-azure-ad-join-hybrid)  
+    These devices are joined to your on-premises Active Directory and registered with Azure Active Directory.  
+    ![](/images/azure-ad-hybrid-joined-device.png)
+    - [How SSO to on-premises resources works on Azure AD joined devices](https://docs.microsoft.com/en-us/azure/active-directory/devices/azuread-join-sso)  
+    If your environment has an on-premises Active Directory (AD), you can also get SSO experience on Azure AD joined devices to resources and applications that rely on on-premises AD. This article explains how this works.
 - Delegation by using administrative units
-    - [Administrative units](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units)
-    - [Delegate app registration permissions](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-app-roles)
+    - [Administrative units](https://docs.microsoft.com/en-us/azure/active-directory/roles/administrative-units)  
+    An administrative unit is an Azure AD resource that can be a container for other Azure AD resources. An administrative unit can contain only users and groups. Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support.
+    - [Delegate app registration permissions](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-app-roles)  
+        - Restrict who can create applications
+        - Assign application owners
+        - Assign built-in application admin roles
+        - Create and assign a custom role (preview)
 - Tenant-wide settings
-    - [Default user permissions (members and guests)](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/users-default-permissions)
-    - [Sign in with LinkedIn](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/linkedin-integration)
-    - [Security defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
-    - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)
-    - [Add your organization's privacy info](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-properties-area)
+    - [Default user permissions (members and guests)](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/users-default-permissions)  
+    In Azure Active Directory (Azure AD), all users are granted a set of default permissions. A user’s access consists of the type of user, their role assignments, and their ownership of individual objects. This article describes those default permissions and contains a comparison of the member and guest user defaults. The default user permissions can be changed only in user settings in Azure AD. The article also contains a comparison between member and guest default permissions.
+    - [Sign in with LinkedIn](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/linkedin-integration)  
+    You can allow users in your organization to access their LinkedIn connections within some Microsoft apps. No data is shared until users consent to connect their accounts. 
+    - [Security defaults](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)  
+    Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more popular. Security defaults make it easier to help protect your organization from these attacks with preconfigured security settings
+    - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)  
+    By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests. Azure AD allows you to restrict what external guest users can see in your Azure AD directory. By default, guest users are set to a limited permission level that blocks them from enumerating users, groups, or other directory resources, but lets them see membership of non-hidden groups.
+    - [Add your organization's privacy info](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-properties-area)  
+    We strongly recommend you add both your global privacy contact and your organization's privacy statement, so your internal employees and external guests can review your policies. Because privacy statements are uniquely created and tailored for each business, we strongly recommend you contact a lawyer for assistance.  
+    ![](/images/active-directory-no-privacy-statement-or-contact.png)
 
 ### [Create, configure, and manage identities](https://docs.microsoft.com/en-us/learn/modules/create-configure-manage-identities/)
 - Manage users
@@ -176,6 +215,8 @@ This study guide contains various links to official documentation in order to ge
     - [Monitor and troubleshoot continuous access evaluation](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-continuous-access-evaluation-troubleshoot)
 - Implement application controls
     - [Conditional Access: Cloud apps, actions, and authentication context](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
+    - [Protect apps with Microsoft Cloud App Security Conditional Access App Control](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad)
+    - [Require app protection policy and an approved client app for cloud app access with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-protection-based-conditional-access)
 - Implement session management
     - [Conditional Access: Session](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-session)
     - [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
