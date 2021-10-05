@@ -4,7 +4,7 @@ This study guide contains various links to official documentation in order to ge
 
 ## [Part 1: Implement an identity management solution](https://docs.microsoft.com/en-us/learn/paths/implement-identity-management-solution/)
 
-[Implement initial configuration of Azure Active Directory](https://docs.microsoft.com/en-us/learn/modules/implement-initial-configuration-of-azure-active-directory)
+### [Implement initial configuration of Azure Active Directory](https://docs.microsoft.com/en-us/learn/modules/implement-initial-configuration-of-azure-active-directory)
 - Azure Active Directory roles
     - [Understand roles ](https://docs.microsoft.com/en-us/azure/active-directory/roles/concept-understand-roles)
     - [Compare Azure and Azure AD Roles](https://docs.microsoft.com/en-us/azure/role-based-access-control/rbac-and-directory-admin-roles)
@@ -35,7 +35,7 @@ This study guide contains various links to official documentation in order to ge
     - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)
     - [Add your organization's privacy info](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-properties-area)
 
-[Create, configure, and manage identities](https://docs.microsoft.com/en-us/learn/modules/create-configure-manage-identities/)
+### [Create, configure, and manage identities](https://docs.microsoft.com/en-us/learn/modules/create-configure-manage-identities/)
 - Manage users
     - [Add or delete users](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory)
     - [Restore or remove a recently deleted user](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-restore)
@@ -51,7 +51,7 @@ This study guide contains various links to official documentation in order to ge
     - [How to migrate users with individual licenses to groups for licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-migrate-users)
     - [Scenarios, limitations, and known issues using groups to manage licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-group-advanced)
 
-[Implement and manage external identities](https://docs.microsoft.com/en-us/learn/modules/implement-manage-external-identities/)
+### [Implement and manage external identities](https://docs.microsoft.com/en-us/learn/modules/implement-manage-external-identities/)
 - Manage external collaboration
     - [What is guest user access?](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b)
     - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)
@@ -73,7 +73,7 @@ This study guide contains various links to official documentation in order to ge
     - [Add Facebook as an identity provider for External Identities](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/facebook-federation)
     - [Federation with SAML/WS-Fed identity providers for guest users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/direct-federation)
 
-[Implement and manage hybrid identity](https://docs.microsoft.com/en-us/learn/modules/implement-manage-hybrid-identity/)
+### [Implement and manage hybrid identity](https://docs.microsoft.com/en-us/learn/modules/implement-manage-hybrid-identity/)
 - Azure AD Connect
     - [What is Seamless Single Sign-On/SSO?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
     - [How does Seamless SSO work?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-how-it-works)
@@ -113,7 +113,7 @@ This study guide contains various links to official documentation in order to ge
 
 ## [Part 2: Implement an Authentication and Access Management solution](https://docs.microsoft.com/en-us/learn/paths/implement-authentication-access-management-solution/)
 
-[Secure Azure Active Directory users with Multi-Factor Authentication](https://docs.microsoft.com/en-us/learn/modules/secure-aad-users-with-mfa/)
+### [Secure Azure Active Directory users with Multi-Factor Authentication](https://docs.microsoft.com/en-us/learn/modules/secure-aad-users-with-mfa/)
 - What is Azure AD Multi-Factor Authentication?
     - [How MFA works](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
     - [How to get MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing)
@@ -123,6 +123,7 @@ This study guide contains various links to official documentation in order to ge
     - [Deployment guide](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
     - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
     - [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
+    - [Supported device compliance partners](https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-partners#supported-device-compliance-partners)
     - [Optimize reauthentication prompts and understand session lifetime for MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime)
     - [Combined registration for SSPR and Azure AD MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)
     - [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
@@ -131,7 +132,7 @@ This study guide contains various links to official documentation in order to ge
 - Configure multi-factor authentication methods
     - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
 
-[Manage user authentication](https://docs.microsoft.com/en-us/learn/modules/manage-user-authentication/)
+### [Manage user authentication](https://docs.microsoft.com/en-us/learn/modules/manage-user-authentication/)
 - Administer FIDO2 and passwordless authentication methods
     - [What are FIDO2 security keys?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)
     - [Enable passwordless security key sign-in](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
@@ -152,7 +153,7 @@ This study guide contains various links to official documentation in order to ge
 - Implement and manage tenant restrictions
     - [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions)
 
-[Plan, implement, and administer Conditional Access](https://docs.microsoft.com/en-us/learn/modules/plan-implement-administer-conditional-access/)
+### [Plan, implement, and administer Conditional Access](https://docs.microsoft.com/en-us/learn/modules/plan-implement-administer-conditional-access/)
 - Plan security defaults
     - [What are security defaults?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
     - [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
@@ -160,8 +161,12 @@ This study guide contains various links to official documentation in order to ge
     - [What is Conditional Access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
     - [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
     - [Manage external access with Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/7-secure-access-conditional-access)
+    - [Emergency access or break-glass accounts](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-access#user-exclusions)
+    - [Require terms of use](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use)
 - Implement Conditional Access policy controls and assignments
     - [Common Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
+    - [Sign-in risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)
+    - [User risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)
     - [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies)
     - [User and group assignment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
 - Test and troubleshoot Conditional Access policies
@@ -173,12 +178,81 @@ This study guide contains various links to official documentation in order to ge
     - [Conditional Access: Cloud apps, actions, and authentication context](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
 - Implement session management
     - [Conditional Access: Session](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-session)
+    - [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
+    - [Onboard and deploy Conditional Access App Control for any app](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-any-app)
 - Configure smart lockout thresholds
     - [Protect user accounts from attacks with Azure Active Directory smart lockout](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout)
 
-[Manage Azure AD Identity Protection](https://docs.microsoft.com/en-us/learn/modules/manage-azure-active-directory-identity-protection/)
+### [Manage Azure AD Identity Protection](https://docs.microsoft.com/en-us/learn/modules/manage-azure-active-directory-identity-protection/)
 - Review identity protection basics
+    - [What is Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
+    - [Security overview](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-security-overview)
+    - [What are risks?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-risks)
 - Implement and manage user risk policy
+    - [Identity Protection policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies)
+    - [Configure and enable risk policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)
 - Configure Azure Active Directory multi-factor authentication registration policy
+    - [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - Monitor, investigate, and remediate elevated risky users
+    - [Configure notifications](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
+    - [How To: Investigate risk](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
+    - [Remediate risks and unblock users](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock)
 
+## [Part 3: Implement Access Management for Apps](https://docs.microsoft.com/en-us/learn/paths/implement-access-management-for-apps/)
+
+### [Plan and design the integration of enterprise apps for SSO](https://docs.microsoft.com/en-us/learn/modules/plan-design-integration-of-enterprise-apps-for-sso/)
+- Discover apps by using Microsoft Cloud App Security and Active Directory Federation Services app report
+- Implement access management for apps
+- Design and implement app management roles
+- Create a custom role to manage app registration
+- Configure pre-integrated gallery SaaS apps
+
+### [Implement and monitor the integration of enterprise apps for SSO](https://docs.microsoft.com/en-us/learn/modules/implement-monitor-integration-of-enterprise-apps-for-sso/)
+- Implement token customizations
+- Implement and configure consent settings
+- Integrate on-premises apps by using Azure Active Directory application proxy
+- Integrate custom SaaS apps for single sign-on
+- Implement application user provisioning
+- Monitor and audit access to Azure Active Directory integrated applications
+
+### [Implement app registration](https://docs.microsoft.com/en-us/learn/modules/implement-app-registration/)
+- Plan your line of business application registration strategy
+- Implement application registration
+- Configure application permission
+- Grant tenant-wide admin consent to an application
+- Implement application authorization
+- Add app roles to application and receive tokens
+
+## [Part 4: Plan and implement an identity governance strategy](https://docs.microsoft.com/en-us/learn/paths/plan-implement-identity-governance-strategy/)
+
+### [Plan and implement entitlement management](https://docs.microsoft.com/en-us/learn/modules/plan-implement-entitlement-management/)
+- Define access packages
+- Exercise create and manage a resource catalog with Azure AD entitlement
+- Configure entitlement management
+- Add terms of use acceptance report
+- Manage the lifecycle of external users with Azure AD identity governance
+
+### [Plan, implement, and manage access review](https://docs.microsoft.com/en-us/learn/modules/plan-implement-manage-access-review/)
+- Plan for access reviews
+- Create access reviews for groups and apps
+- Monitor access review findings
+- Manage licenses for access reviews
+- Automate access review management tasks
+- Configure recurring access reviews
+
+### [Plan and implement privileged access](https://docs.microsoft.com/en-us/learn/modules/plan-implement-privileged-access/)
+- Define a privileged access strategy for administrative users
+- Configure Privileged Identity Management for Azure resources
+- Configure Privileged Identity Management for Azure Active Directory roles
+- Assign Azure Active Directory roles in Privileged Identity Management
+- Assign Azure resource roles in Privileged Identity Management
+- Analyze Privileged Identity Management audit history and reports
+- Create and manage emergency access accounts
+
+### [Monitor and maintain Azure Active Directory](https://docs.microsoft.com/en-us/learn/modules/monitor-maintain-azure-active-directory/)
+- Analyze and investigate sign-in logs to troubleshoot access issues
+- Review and monitor Azure Active Directory audit logs
+- Connect data from Azure Active Directory to Azure Sentinel
+- Export logs to third-party security information and event management system
+- Analyze Azure Active Directory workbooks and reporting
+- Configure notifications
