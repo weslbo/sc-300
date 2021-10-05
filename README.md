@@ -378,27 +378,97 @@ This study guide contains various links to official documentation in order to ge
 ## [Part 3: Implement Access Management for Apps](https://docs.microsoft.com/en-us/learn/paths/implement-access-management-for-apps/)
 
 ### [Plan and design the integration of enterprise apps for SSO](https://docs.microsoft.com/en-us/learn/modules/plan-design-integration-of-enterprise-apps-for-sso/)
-- Discover apps by using Microsoft Cloud App Security and Active Directory Federation Services app report
+- Discover apps by using Microsoft Cloud App Security (MCAS) and Active Directory Federation Services app report
+    - [Set up Cloud Discovery](https://docs.microsoft.com/en-us/cloud-app-security/set-up-cloud-discovery)  
+    Cloud Discovery analyzes your traffic logs against Microsoft Cloud App Security's cloud app catalog of over 22,000 cloud apps. The apps are ranked and scored based on more than 90 risk factors to provide you with ongoing visibility into cloud use, Shadow IT, and the risk Shadow IT poses into your organization.
+    - [Working with discovered apps](https://docs.microsoft.com/en-us/cloud-app-security/discovered-apps)  
+    The Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of what kinds of apps are being used, your open alerts, and the risk levels of apps in your organization.
+    - [Use the AD FS application activity report to migrate applications to Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/migrate-adfs-application-activity)  
+    The AD FS application activity report in the Azure portal lets you quickly identify which of your applications are capable of being migrated to Azure AD. It assesses all AD FS applications for compatibility with Azure AD, checks for any issues, and gives guidance on preparing individual applications for migration. 
 - Implement access management for apps
+    - [Assign users and groups to an application in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-assign-users)  
+    This article shows you how to assign users and groups to an enterprise application in Azure Active Directory (Azure AD) 
 - Design and implement app management roles
+    - [Delegate app registration permissions in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-app-roles)  
+    This article describes how to use permissions granted by custom roles in Azure Active Directory (Azure AD) to address your application management needs
 - Create a custom role to manage app registration
+    - [Create and assign a custom role (preview)](https://docs.microsoft.com/en-us/azure/active-directory/roles/delegate-app-roles#create-and-assign-a-custom-role-preview)  
+     A custom role can be assigned at organization-wide scope, or it can be assigned at the scope if a single Azure AD object. An example of an object scope is a single app registration.
 - Configure pre-integrated gallery SaaS apps
+    - [Configure enterprise application properties in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/add-application-portal-configure)  
+    You can configure the following common attributes of an enterprise application:
+        - Enabled for users to sign in? - Determines whether users assigned to the application can sign in.
+        - User assignment required? - Determines whether users who aren't assigned to the application can sign in.
+        - Visible to users? - Determines whether users assigned to an application can see it in My Apps and Microsoft 365 app launcher.
+        - Logo - Determines the logo that represents the application.
+        - Notes - Provides a place to add notes that apply to the application.
 
 ### [Implement and monitor the integration of enterprise apps for SSO](https://docs.microsoft.com/en-us/learn/modules/implement-monitor-integration-of-enterprise-apps-for-sso/)
 - Implement token customizations
+    - [Configurable token lifetimes in the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-configurable-token-lifetimes)  
+    You can specify the lifetime of a access, ID, or SAML token issued by the Microsoft identity platform. You can set token lifetimes for all apps in your organization, for a multi-tenant (multi-organization) application, or for a specific service principal in your organization.
+    - [Provide optional claims to your app](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-optional-claims)
 - Implement and configure consent settings
+    - [Configure how end-users consent to applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal)  
+    Before an application can access your organization's data, a user must grant the application permissions to do so. Different permissions allow different levels of access. By default, all users are allowed to consent to applications for permissions that don't require administrator consent. 
+    - [Risk-based step-up consent](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-user-consent?tabs=azure-portal#risk-based-step-up-consent)  
+    Risk-based step-up consent helps reduce user exposure to malicious apps that make illicit consent requests. For example, consent requests for newly registered multi-tenant apps that are not publisher verified and require non-basic permissions are considered risky. If Microsoft detects a risky end-user consent request, the request will require a "step-up" to admin consent instead. This capability is enabled by default, but it will only result in a behavior change when end-user consent is enabled.
+    - [Configure the admin consent workflow](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/configure-admin-consent-workflow)  
+    This article describes how to enable the admin consent workflow feature, which gives end users a way to request access to applications that require admin consent.
+    - [Grant tenant-wide admin consent to an application](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/grant-admin-consent)
 - Integrate on-premises apps by using Azure Active Directory application proxy
+    - [What is Application Proxy?](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/what-is-application-proxy)  
+    Azure AD Application Proxy  can be implemented by IT professionals who want to publish on-premises web applications externally. Remote users who need access to internal apps can then access them in a secure manner.  
+    ![](/images/azure-ad-application-proxy-architecture.png)
+    - [Remote access to on-premises applications through Azure AD Application Proxy](https://docs.microsoft.com/en-us/azure/active-directory/app-proxy/application-proxy)  
+    After a single sign-on to Azure AD, users can access both cloud and on-premises applications through an external URL or an internal application portal. For example, Application Proxy can provide remote access and single sign-on to Remote Desktop, SharePoint, Teams, Tableau, Qlik, and line of business (LOB) applications.
 - Integrate custom SaaS apps for single sign-on
+    - [What is the Microsoft identity platform?](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-overview)
+    - [ClaimsXRay in AzureAD with Directory Extension](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/claimsxray-in-azuread-with-directory-extension/ba-p/1505737)
 - Implement application user provisioning
+    - [How Application Provisioning works in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/app-provisioning/how-provisioning-works)  
+    Automatic provisioning refers to creating user identities and roles in the cloud applications that users need access to. In addition to creating user identities, automatic provisioning includes the maintenance and removal of user identities as status or roles change. Before you start a deployment, you can review this article to learn how Azure AD provision works and get configuration recommendations.
+    - [SCIM synchronization with Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/sync-scim)
 - Monitor and audit access to Azure Active Directory integrated applications
+    - [Usage and insights report in the Azure Active Directory portal](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-usage-insights-report)  
+    With the usage and insights report, you can get an application-centric view of your sign-in data.
+    - [Audit logs in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs)  
+    With the audit logs in Azure AD, you get access to records of system activities for compliance. The most common views of this log are based on the following categories: user/group/application management
 
 ### [Implement app registration](https://docs.microsoft.com/en-us/learn/modules/implement-app-registration/)
 - Plan your line of business application registration strategy
+    - [How and why applications are added to Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-how-applications-are-added)  
+        - What are application objects and where do they come from
+        - What are service principals and where do they come from?
+        - How are application objects and service principals related to each other?
+        - Why do applications integrate with Azure AD?
+        - Who has permission to add applications to my Azure AD instance?
+    - [Tenancy in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/single-and-multi-tenant-apps)  
+    Single-tenant versus Multi-tenant apps
 - Implement application registration
+    - [Quickstart: Register an application with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-register-app)  
+    In this quickstart, you register an app in the Azure portal so the Microsoft identity platform can provide authentication and authorization services for your application and its users.
+    - [Application and service principal objects in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-objects-and-service-principals)  
+    This article describes application registration, application objects, and service principals in Azure Active Directory (Azure AD): what they are, how they're used, and how they are related to each other. A multi-tenant example scenario is also presented to illustrate the relationship between an application's application object and corresponding service principal objects.
+    - [App sign-in flow with the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/app-sign-in-flow)  
+    This topic discusses the basic sign-in flow for web, desktop, and mobile apps using Microsoft identity platform.
 - Configure application permission
+    - [Permissions and consent in the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent)  
+    This article covers the basic concepts of this authorization model, including scopes, permissions, and consent.
+    - [Understanding Azure AD application consent experiences](https://docs.microsoft.com/en-us/azure/active-directory/develop/application-consent-experience)  
+    Learn more about the Azure Active Directory (Azure AD) application consent user experience. So you can intelligently manage applications for your organization and/or develop applications with a more seamless consent experience.
+    - [Configure a client application to access a web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis)
 - Grant tenant-wide admin consent to an application
+    - [Admin consent on the Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-admin-consent)  
+    Some permissions require consent from an administrator before they can be granted within a tenant. You can also use the admin consent endpoint to grant permissions to an entire tenant.
 - Implement application authorization
+    - [Application roles](https://docs.microsoft.com/en-us/azure/architecture/multitenant-identity/app-roles)  
+        - Roles using Azure AD App Roles
+        - Roles using Azure AD security groups
+        - Roles using an application role manager
 - Add app roles to application and receive tokens
+    - [Add app roles to your application and receive them in the token](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps)  
+    Using RBAC with Application Roles and Role Claims, developers can securely enforce authorization in their apps with less effort.
 
 ## [Part 4: Plan and implement an identity governance strategy](https://docs.microsoft.com/en-us/learn/paths/plan-implement-identity-governance-strategy/)
 
