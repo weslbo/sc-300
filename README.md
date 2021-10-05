@@ -76,153 +76,277 @@ This study guide contains various links to official documentation in order to ge
 
 ### [Create, configure, and manage identities](https://docs.microsoft.com/en-us/learn/modules/create-configure-manage-identities/)
 - Manage users
-    - [Add or delete users](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory)
-    - [Restore or remove a recently deleted user](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-restore)
+    - [Add or delete users](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/add-users-azure-active-directory)  
+    Add new users or delete existing users from your Azure Active Directory (Azure AD) organization. To add or delete users you must be a User administrator or Global administrator.
+    - [Restore or remove a recently deleted user](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-users-restore)  
+    After you delete a user, the account remains in a suspended state for 30 days. During that 30-day window, the user account can be restored, along with all its properties. After that 30-day window passes, the permanent deletion process is automatically started. You can view your restorable users, restore a deleted user, or permanently delete a user using Azure Active Directory (Azure AD) in the Azure portal.
 - Manage groups
-    - [Create a basic group and add members](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)
-    - [Add or remove a group from another group](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-membership-azure-portal)
+    - [Create a basic group and add members](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal)  
+    There are several group and membership types. The article explains each group (security/Microsoft 365) and membership type (assigned/dynamic user/dynamic device) and why they are used, to help you decide which options to use when you create a group.
+    - [Add or remove a group from another group](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-groups-membership-azure-portal)  
+    You can add an existing Security group to another existing Security group (also known as nested groups), creating a member group (subgroup) and a parent group. The member group inherits the attributes and properties of the parent group, saving you configuration time.
 - Manage licenses
-    - [Assign or remove licenses](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)
-    - [Assign or remove licenses to users](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups?context=/azure/active-directory/enterprise-users/context/ugr-context)
-    - [Assign licenses to users by group membership](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-assign)
-    - [What is group-based licensing in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)
-    - [Identify and resolve license assignment problems for a group](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-resolve-problems)
-    - [How to migrate users with individual licenses to groups for licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-migrate-users)
-    - [Scenarios, limitations, and known issues using groups to manage licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-group-advanced)
+    - [Assign or remove licenses](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/license-users-groups)  
+    Many Azure Active Directory (Azure AD) services require you to license each of your users or groups (and associated members) for that service. Only users with active licenses will be able to access and use the licensed Azure AD services for which that's true. Licenses are applied per tenant and do not transfer to other tenants.
+    - [Assign licenses to users by group membership](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-assign)  
+    This article walks you through assigning product licenses to a group of users and verifying that they're licensed correctly in Azure Active Directory (Azure AD).
+    - [What is group-based licensing in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/active-directory-licensing-whatis-azure-portal)  
+    Azure AD now includes group-based licensing. You can assign one or more product licenses to a group. Azure AD ensures that the licenses are assigned to all members of the group. Any new members who join the group are assigned the appropriate licenses. When they leave the group, those licenses are removed. This licensing management eliminates the need for automating license management via PowerShell to reflect changes in the organization and departmental structure on a per-user basis.
+    - [Identify and resolve license assignment problems for a group](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-resolve-problems)  
+    Group-based licensing in Azure Active Directory (Azure AD) introduces the concept of users in a licensing error state. In this article, we explain the reasons why users might end up in this state.
+    - [How to migrate users with individual licenses to groups for licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-groups-migrate-users)  
+    You may have existing licenses deployed to users in the organizations via direct assignment; that is, using PowerShell scripts or other tools to assign individual user licenses. Before you begin using group-based licensing to manage licenses in your organization, you can use this migration plan to seamlessly replace existing solutions with group-based licensing.
+    - [Scenarios, limitations, and known issues using groups to manage licensing](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/licensing-group-advanced)  
+    Use the following information and examples to gain a more advanced understanding of Azure Active Directory (Azure AD) group-based licensing.
 
 ### [Implement and manage external identities](https://docs.microsoft.com/en-us/learn/modules/implement-manage-external-identities/)
 - Manage external collaboration
-    - [What is guest user access?](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b)
-    - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)
+    - [What is guest user access?](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/what-is-b2b)  
+    Azure Active Directory (Azure AD) business-to-business (B2B) collaboration is a feature within External Identities that lets you invite guest users to collaborate with your organization. With B2B collaboration, you can securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data.
+    - [Configure B2B external collaboration settings](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/delegate-invitations)  
+    By default, all users and guests in your directory can invite guests even if they're not assigned to an admin role. External collaboration settings let you turn guest invitations on or off for different types of users in your organization. You can also delegate invitations to individual users by assigning roles that allow them to invite guests.
 - Invite external users - individually and in bulk
-    - [Add Azure Active Directory B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator)
-    - [Bulk invite Azure AD B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/tutorial-bulk-invite)
-    - [Invitation email](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/invitation-email-elements)
-    - [Invitation redemption experience](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/redemption-experience)
+    - [Add Azure Active Directory B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/add-users-administrator)  
+    As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Azure Active Directory (Azure AD), with a user type of Guest. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
+    - [Bulk invite Azure AD B2B collaboration users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/tutorial-bulk-invite)  
+    If you use Azure Active Directory (Azure AD) B2B collaboration to work with external partners, you can invite multiple guest users to your organization at the same time.
+    - [Invitation email](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/invitation-email-elements)  
+    Invitation emails are a critical component to bring partners on board as B2B collaboration users in Azure AD. While it’s not required that you send an email to invite someone using B2B collaboration, doing so gives the user all the information they need to make a decision about whether to accept your invite. It also gives them a link they can always refer to in the future when they need to return to your resources.
+    - [Invitation redemption experience](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/redemption-experience)  
+    This article describes the ways guest users can access your resources and the consent process they'll encounter. If you send an invitation email to the guest, the invitation includes a link the guest can redeem to get access to your app or portal. 
 - Manage external user accounts in Azure Active Directory
-    - [Properties of an Azure Active Directory B2B collaboration user](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/user-properties)
-    - [Microsoft 365 external sharing and Azure Active Directory (Azure AD) B2B collaboration](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/o365-external-user)
+    - [Properties of an Azure Active Directory B2B collaboration user](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/user-properties)  
+    This article describes the properties and states of an invited Azure Active Directory B2B (Azure AD B2B) collaboration user object both before and after invitation redemption. An Azure AD B2B collaboration user is an external user, typically from a partner organization, that you invite to sign into your Azure AD organization using their own credentials. This B2B collaboration user (also generally referred to as a guest user) can then access the apps and resources you want to share with them. A user object is created for the B2B collaboration user in the same directory as your employees. B2B collaboration user objects have limited privileges in your directory by default, and they can be managed like employees, added to groups, and so on.  
+    ![](/images/redemption-diagram.png)
+    - [Microsoft 365 external sharing and Azure Active Directory (Azure AD) B2B collaboration](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/o365-external-user)  
+    This article explains how Azure AD B2B differs from external sharing in SharePoint Online
 - Dynamic groups
-    - [Create or update a dynamic group](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-create-rule)
-    - [Dynamic membership rules for groups](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)
+    - [Create or update a dynamic group](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-create-rule)  
+    In Azure Active Directory (Azure AD), you can use rules to determine group membership based on user or device properties. This article tells how to set up a rule for a dynamic group in the Azure portal. Dynamic membership is supported for security groups or Microsoft 365 Groups. When a group membership rule is applied, user and device attributes are evaluated for matches with the membership rule. When an attribute changes for a user or device, all dynamic group rules in the organization are processed for membership changes.
+    - [Dynamic membership rules for groups](https://docs.microsoft.com/en-us/azure/active-directory/enterprise-users/groups-dynamic-membership)  
+    Dynamic group membership reduces the administrative overhead of adding and removing users. This article details the properties and syntax to create dynamic membership rules for users or devices. 
 - Configure identity providers
-    - [Azure Active Directory (Azure AD) identity provider](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/azure-ad-account)
-    - [Microsoft account (MSA) identity provider](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/microsoft-account)
-    - [Add Google as an identity provider for B2B guest users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/google-federation)
-    - [Add Facebook as an identity provider for External Identities](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/facebook-federation)
-    - [Federation with SAML/WS-Fed identity providers for guest users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/direct-federation)
+    - [Azure Active Directory (Azure AD) identity provider](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/azure-ad-account)  
+    Azure Active Directory is available as an identity provider option for B2B collaboration by default. If an external guest user has an Azure AD account through work or school, they can redeem your B2B collaboration invitations or complete your sign-up user flows using their Azure AD account.
+    - [Microsoft account (MSA) identity provider](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/microsoft-account)  
+    Your B2B guest users can use their own personal Microsoft accounts for B2B collaboration without further configuration. Guest users can redeem your B2B collaboration invitations or complete your sign-up user flows using their personal Microsoft account.
+    - [Add Google as an identity provider for B2B guest users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/google-federation)  
+    By setting up federation with Google, you can allow invited users to sign in to your shared apps and resources with their own Gmail accounts, without having to create Microsoft accounts.
+    - [Add Facebook as an identity provider for External Identities](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/facebook-federation)  
+    You can add Facebook to your self-service sign-up user flows so that users can sign in to your applications using their own Facebook accounts. To allow users to sign in using Facebook, you'll first need to enable self-service sign-up for your tenant. After you add Facebook as an identity provider, set up a user flow for the application and select Facebook as one of the sign-in options.
+    - [Federation with SAML/WS-Fed identity providers for guest users](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/direct-federation)  
+    This article describes how to set up federation with any organization whose identity provider (IdP) supports the SAML 2.0 or WS-Fed protocol. When you set up federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure AD tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
 
 ### [Implement and manage hybrid identity](https://docs.microsoft.com/en-us/learn/modules/implement-manage-hybrid-identity/)
 - Azure AD Connect
-    - [What is Seamless Single Sign-On/SSO?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)
-    - [How does Seamless SSO work?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-how-it-works)
-    - [What is Azure AD Connect?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)
-    - [Choose the right authentication method (decision tree)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)
+    - [What is Seamless Single Sign-On/SSO?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso)  
+    Azure Active Directory Seamless Single Sign-On (Azure AD Seamless SSO) automatically signs users in when they are on their corporate devices connected to your corporate network. When enabled, users don't need to type in their passwords to sign in to Azure AD, and usually, even type in their usernames. This feature provides your users easy access to your cloud-based applications without needing any additional on-premises components.
+    - [How does Seamless SSO work?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-sso-how-it-works)  
+    This article gives you technical details into how the Azure Active Directory Seamless Single Sign-On (Seamless SSO) feature works.  
+    ![](/images/sso1.png)
+    - [What is Azure AD Connect?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect)  
+    Azure AD Connect is the Microsoft tool designed to do:
+        - Password hash synchronization - A sign-in method that synchronizes a hash of a users on-premises AD password with Azure AD.
+        - Pass-through authentication - A sign-in method that allows users to use the same password on-premises and in the cloud, but doesn't require the additional infrastructure of a federated environment.
+        - Federation integration - Federation is an optional part of Azure AD Connect and can be used to configure a hybrid environment using an on-premises AD FS infrastructure. It also provides AD FS management capabilities such as certificate renewal and additional AD FS server deployments.
+        - Synchronization - Responsible for creating users, groups, and other objects. As well as, making sure identity information for your on-premises users and groups is matching the cloud. This synchronization also includes password hashes.
+        - Health Monitoring - Azure AD Connect Health can provide robust monitoring and provide a central location in the Azure portal to view this activity.
+    - [Choose the right authentication method (decision tree)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/choose-ad-authn)  
+    Choosing the correct authentication method is the first concern for organizations wanting to move their apps to the cloud.  
+    ![](/images/azure-ad-authn-image1.png)
     - [Azure AD Connect and Azure AD Connect Health installation roadmap](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-roadmap)
 - Password hash synchronization (PHS)
-    - [What is password hash synchronization?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs)
-    - [How password hash synchronization works](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)
-    - [Troubleshoot password hash synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-password-hash-synchronization)
-    - [Getting started with Azure AD Connect using express settings (password hash synchronization)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)
+    - [What is password hash synchronization?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-phs)  
+    Azure AD Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Azure AD instance.  
+    ![](/images/arch1.png)
+    - [How password hash synchronization works](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization)  
+    This article provides information that you need to synchronize your user passwords from an on-premises Active Directory instance to a cloud-based Azure Active Directory (Azure AD) instance.  
+    ![](/images/arch3d.png)
+    - [Troubleshoot password hash synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-password-hash-synchronization)  
+    This topic provides steps for how to troubleshoot issues with password hash synchronization. If passwords are not synchronizing as expected, it can be either for a subset of users or for all users.
+    - [Getting started with Azure AD Connect using express settings (password hash synchronization)](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-express)  
+    Azure AD Connect Express Settings is used when you have a single-forest topology and password hash synchronization for authentication. Express Settings is the default option and is used for the most commonly deployed scenario. 
 - Pass-through authentication (PTA)
-    - [What is Pass-through Authentication?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)
-    - [How does Pass-through Authentication work?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-how-it-works)
-    - [Current limitations](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-current-limitations)
-    - [Security deep dive](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-security-deep-dive)
-    - [Deploy Azure AD Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start)
+    - [What is Pass-through Authentication?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta)  
+    A sign-in method that allows users to use the same password on-premises and in the cloud, but doesn't require the additional infrastructure of a federated environment.  
+    ![](/images/pta1.png)
+    - [How does Pass-through Authentication work?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-how-it-works)  
+    This article is an overview of how Azure Active directory (Azure AD) Pass-through Authentication works.
+    - [Current limitations](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-current-limitations)  
+    This article details the supported and un-supported scenarios
+    - [Security deep dive](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-security-deep-dive)  
+    This article provides a more detailed description of how Azure Active Directory (Azure AD) Pass-through Authentication works. It focuses on the security aspects of the feature.
+        - Detailed technical information about how to install and register the Authentication Agents.
+        - Detailed technical information about the encryption of passwords during user sign-in.
+        - The security of the channels between on-premises Authentication Agents and Azure AD.
+        - Detailed technical information about how to keep the Authentication Agents operationally secure.
+        - Other security-related topics.
+    - [Deploy Azure AD Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-pta-quick-start)  
+    This is a quickstart tutorial
 - Implement and manage federation
-    - [What is federation?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-fed)
-    - [How federation works](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-whatis)
+    - [What is federation?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-fed)  
+    You can federate your on-premises environment with Azure AD and use this federation for authentication and authorization. This sign-in method ensures that all user authentication occurs on-premises. This method allows administrators to implement more rigorous levels of access control. Federation with AD FS and PingFederate is available.  
+    ![](/images/federated-identity.png)
+    - [How federation works](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-whatis)  
+    With federation sign-in, you can enable users to sign in to Azure AD-based services with their on-premises passwords and, while on the corporate network, without having to enter their passwords again.
     - [Configuring federation with AD FS](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-install-custom#configuring-federation-with-ad-fs)
-    - [Manage and customize ADFS by using Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-management)
+    - [Manage and customize ADFS by using Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-fed-management)  
+    This article describes how to manage and customize Active Directory Federation Services (AD FS) by using Azure Active Directory (Azure AD) Connect. It also includes other common AD FS tasks that you might need to do for a complete configuration of an AD FS farm.
 - Trouble-shoot synchronization errors
-    - [Troubleshoot password hash synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-password-hash-synchronization)
-    - [Troubleshoot Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)
-    - [Troubleshooting Errors during synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sync-errors)
-    - [Troubleshoot an object that is not synchronizing](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-object-not-syncing)
+    - [Troubleshoot password hash synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-password-hash-synchronization)  
+    This topic provides steps for how to troubleshoot issues with password hash synchronization. If passwords are not synchronizing as expected, it can be either for a subset of users or for all users.
+    - [Troubleshoot Pass-through Authentication](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-pass-through-authentication)  
+    This article helps you find troubleshooting information about common issues regarding Azure AD Pass-through Authentication
+    - [Troubleshooting Errors during synchronization](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-sync-errors)  
+    Errors could occur when identity data is synchronized from Windows Server Active Directory (AD DS) to Azure Active Directory (Azure AD). This article provides an overview of different types of sync errors, some of the possible scenarios that cause those errors and potential ways to fix the errors. This article includes the common error types and may not cover all the possible errors.
+    - [Troubleshoot an object that is not synchronizing](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-object-not-syncing)  
+    If an object is not syncing as expected with Microsoft Azure Active Directory (Azure AD), it can be because of several reasons. If you are troubleshooting a problem where the object is not in Azure AD, this article is for you. It describes how to find errors in the on-premises component Azure AD Connect synchronization.
     - [Troubleshoot an attribute not synchronizing in Azure AD Connect](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/tshoot-connect-attribute-not-syncing)
 - Azure AD Connect Health
-    - [What is Azure AD Connect Health?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect#what-is-azure-ad-connect-health)
-    - [Why use Azure AD Connect Health?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect#why-use-azure-ad-connect-health)
-    - [Azure AD Connect Health agent installation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-agent-install)
-    - [Azure AD Connect Health operations](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-operations)
+    - [What is Azure AD Connect Health?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect#what-is-azure-ad-connect-health)  
+    Azure Active Directory (Azure AD) Connect Health provides robust monitoring of your on-premises identity infrastructure. It enables you to maintain a reliable connection to Microsoft 365 and Microsoft Online Services. This reliability is achieved by providing monitoring capabilities for your key identity components. Also, it makes the key data points about these components easily accessible.  
+    ![](/images/aadconnecthealth2.png)
+    - [Why use Azure AD Connect Health?](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/whatis-azure-ad-connect#why-use-azure-ad-connect-health)  
+    Azure AD Connect Health helps monitor and gain insights into your on-premises identity infrastructure thus ensuring the reliability of this environment. It is as simple as installing an agent on each of your on-premises identity servers.
+    - [Azure AD Connect Health agent installation](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-agent-install)  
+    In this article, you'll learn how to install and configure the Azure Active Directory (Azure AD) Connect Health agents. 
+    - [Azure AD Connect Health operations](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-operations)  
+    This topic describes the various operations you can perform by using Azure Active Directory (Azure AD) Connect Healt (Enable email notifications, Delete a server or service instance, Manage access with Azure RBAC)
     - [Monitor Azure AD Connect sync with Azure AD Connect Health](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-sync)
-    - [Diagnose and remediate duplicated attribute sync errors](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-diagnose-sync-errors)
+        - Alerts for Azure AD Connect Health for sync
+        - Limited Evaluation of Alerts
+        - Sync Insight (latency, object changes)
+        - Object Level Synchronization Error Report  
+    - [Diagnose and remediate duplicated attribute sync errors](https://docs.microsoft.com/en-us/azure/active-directory/hybrid/how-to-connect-health-diagnose-sync-errors)  
+    Taking one step farther to highlight sync errors, Azure Active Directory (Azure AD) Connect Health introduces self-service remediation. It troubleshoots duplicated attribute sync errors and fixes objects that are orphaned from Azure AD.
 
 
 ## [Part 2: Implement an Authentication and Access Management solution](https://docs.microsoft.com/en-us/learn/paths/implement-authentication-access-management-solution/)
 
 ### [Secure Azure Active Directory users with Multi-Factor Authentication](https://docs.microsoft.com/en-us/learn/modules/secure-aad-users-with-mfa/)
 - What is Azure AD Multi-Factor Authentication?
-    - [How MFA works](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)
-    - [How to get MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing)
-    - [Enable per-user MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userstates)
-    - [Configure MFA settings](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings)
+    - [How MFA works](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-howitworks)  
+    Multi-factor authentication is a process where a user is prompted during the sign-in process for an additional form of identification, such as to enter a code on their cellphone or to provide a fingerprint scan.  
+    ![](/images/conditional-access-overview.png)
+    - [How to get MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-mfa-licensing)  
+     Basic multi-factor authentication features are available to Microsoft 365 and Azure Active Directory (Azure AD) global administrators for no extra cost. If you want to upgrade the features for your admins or extend multi-factor authentication to the rest of your users, you can purchase Azure AD Multi-Factor Authentication in several ways.
+    - [Enable per-user MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-userstates)  
+    To secure user sign-in events in Azure AD, you can require multi-factor authentication (MFA). Enabling Azure AD Multi-Factor Authentication using Conditional Access policies is the recommended approach to protect users. Conditional Access is an Azure AD Premium P1 or P2 feature that lets you apply rules to require MFA as needed in certain scenarios.   
+    If needed, you can instead enable each account for per-user Azure AD Multi-Factor Authentication. When users are enabled individually, they perform multi-factor authentication each time they sign in (with some exceptions, such as when they sign in from trusted IP addresses or when the remember MFA on trusted devices feature is turned on).  
+    Changing user states isn't recommended unless your Azure AD licenses don't include Conditional Access and you don't want to use security defaults
+    - [Configure MFA settings](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-mfasettings)  
+    To customize the end-user experience for Azure AD Multi-Factor Authentication, you can configure options for settings like the account lockout thresholds or fraud alerts and notifications. Some settings are directly in the Azure portal for Azure Active Directory (Azure AD), and some in a separate Azure AD Multi-Factor Authentication portal.
 - Plan your multi-factor authentication deployment
-    - [Deployment guide](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)
-    - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
-    - [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
-    - [Supported device compliance partners](https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-partners#supported-device-compliance-partners)
-    - [Optimize reauthentication prompts and understand session lifetime for MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime)
-    - [Combined registration for SSPR and Azure AD MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)
+    - [Deployment guide](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-mfa-getstarted)  
+    This deployment guide shows you how to plan and implement an Azure AD MFA roll-out.
+    - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)  
+    Microsoft recommends passwordless authentication methods such as Windows Hello, FIDO2 security keys, and the Microsoft Authenticator app because they provide the most secure sign-in experience. Although a user can sign-in using other common methods such as a username and password, passwords should be replaced with more secure authentication methods.  
+    ![](/images/authentication-methods.png)
+    - [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)  
+    Microsoft provides standard conditional policies called security defaults that ensure a basic level of security. However, your organization may need more flexibility than security defaults offer. You can use Conditional Access to customize security defaults with more granularity and to configure new policies that meet your requirements.
+    - [Supported device compliance partners](https://docs.microsoft.com/en-us/mem/intune/protect/device-compliance-partners#supported-device-compliance-partners)  
+    The compliance state is evaluated by conditional access policies, the same as compliance state data for devices managed by Intune. By default, Intune is a registered compliance partner for iOS and Android. When you add additional partners, you can set the priority order to ensure the correct partner manages device to fit your business needs.
+    - [Optimize reauthentication prompts and understand session lifetime for MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concepts-azure-multi-factor-authentication-prompts-session-lifetime)  
+    Azure Active Directory (Azure AD) has multiple settings that determine how often users need to reauthenticate. This reauthentication could be with a first factor such as password, FIDO, or passwordless Microsoft Authenticator, or to perform multi-factor authentication (MFA). You can configure these reauthentication settings as needed for your own environment and the user experience you want.
+    - [Combined registration for SSPR and Azure AD MFA](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-registration-mfa-sspr-combined)  
+    Before combined registration, users registered authentication methods for Azure AD Multi-Factor Authentication and self-service password reset (SSPR) separately. People were confused that similar methods were used for Azure AD Multi-Factor Authentication and SSPR but they had to register for both features. Now, with combined registration, users can register once and get the benefits of both Azure AD Multi-Factor Authentication and SSPR.
     - [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
-    - [Communication templates](https://aka.ms/mfatemplates)
-    - [End-user documentation](https://support.microsoft.com/en-us/account-billing/set-up-your-security-info-from-a-sign-in-prompt-28180870-c256-4ebf-8bd7-5335571bf9a8)
+    - [Communication templates](https://aka.ms/mfatemplates)  
+    Use this customizable posters and email templates to roll out multi-factor authentication to your organization
+    - [End-user documentation](https://support.microsoft.com/en-us/account-billing/set-up-your-security-info-from-a-sign-in-prompt-28180870-c256-4ebf-8bd7-5335571bf9a8)  
+    You can follow these steps if you're prompted to set up your security info immediately after you sign-in to your work or school account.
 - Configure multi-factor authentication methods
-    - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)
+    - [What authentication and verification methods are available in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-methods)  
+    This article outlines the security considerations for the available authentication methods.
 
 ### [Manage user authentication](https://docs.microsoft.com/en-us/learn/modules/manage-user-authentication/)
 - Administer FIDO2 and passwordless authentication methods
-    - [What are FIDO2 security keys?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)
-    - [Enable passwordless security key sign-in](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key)
+    - [What are FIDO2 security keys?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-authentication-passwordless#fido2-security-keys)  
+    FIDO2 security keys are an unphishable standards-based passwordless authentication method that can come in any form factor.  
+    ![](/images/fido2-security-key-flow.png)
+    - [Enable passwordless security key sign-in](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-authentication-passwordless-security-key)  
+    This document focuses on enabling security key based passwordless authentication. 
 - Implement an authentication solution based on Windows Hello for Business
-    - [How Windows Hello for Business works in Windows Devices](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works)
+    - [How Windows Hello for Business works in Windows Devices](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-how-it-works)  
+    Windows Hello for Business is a modern, two-factor credential that is the more secure alternative to passwords.
     - [Why a PIN is better than a password](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-why-pin-is-better-than-password)
-    - [Windows Hello for Business Deployment Overview](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-deployment-guide)
+    - [Windows Hello for Business Deployment Overview](https://docs.microsoft.com/en-us/windows/security/identity-protection/hello-for-business/hello-deployment-guide)  
+    This deployment overview is to guide you through deploying Windows Hello for Business.
 - Exercise configure and deploy self-service password reset
-    - [How it works: Azure AD self-service password reset](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)
+    - [How it works: Azure AD self-service password reset](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-howitworks)  
+    Azure Active Directory (Azure AD) self-service password reset (SSPR) gives users the ability to change or reset their password, with no administrator or help desk involvement. If a user's account is locked or they forget their password, they can follow prompts to unblock themselves and get back to work. This ability reduces help desk calls and loss of productivity when a user can't sign in to their device or an application.
     - [Enable users to unlock their account or reset passwords using Azure AD self-service password reset](https://docs.microsoft.com/en-us/azure/active-directory/authentication/tutorial-enable-sspr)
-    - [How does self-service password reset writeback work in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-writeback)
-    - [Plan an Azure Active Directory self-service password reset deployment](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-deployment)
+    - [How does self-service password reset writeback work in Azure Active Directory?](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-sspr-writeback)  
+    Password writeback is a feature enabled with Azure AD Connect that allows password changes in the cloud to be written back to an existing on-premises directory in real time. In this configuration, as users change or reset their passwords using SSPR in the cloud, the updated passwords also written back to the on-premises AD DS environment
+    - [Plan an Azure Active Directory self-service password reset deployment](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-sspr-deployment)  
+    This deployment guide shows you how to plan and then test an SSPR roll-out.
 - Deploy and manage password protection
-    - [Eliminate weak passwords in the cloud](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad)
-    - [Eliminate weak passwords on-premises](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
-    - [Plan and deploy on-premises Azure Active Directory Password Protection](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy)
-    - [Enable on-premises Azure Active Directory Password Protection](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)
+    - [Eliminate weak passwords in the cloud](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad)  
+    A lot of security guidance recommends that you don't use the same password in multiple places, to make it complex, and to avoid simple passwords like Password123. You can provide your users with guidance on how to choose passwords, but weak or insecure passwords are often still used. Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. With Azure AD Password Protection, default global banned password lists are automatically applied to all users in an Azure AD tenant. To support your own business and security needs, you can define entries in a custom banned password list. When users change or reset their passwords, these banned password lists are checked to enforce the use of strong passwords.
+    - [Eliminate weak passwords on-premises](https://docs.microsoft.com/en-us/azure/active-directory/authentication/concept-password-ban-bad-on-premises)  
+    Azure AD Password Protection detects and blocks known weak passwords and their variants, and can also block additional weak terms that are specific to your organization. On-premises deployment of Azure AD Password Protection uses the same global and custom banned password lists that are stored in Azure AD, and does the same checks for on-premises password changes as Azure AD does for cloud-based changes. These checks are performed during password changes and password reset events against on-premises Active Directory Domain Services (AD DS) domain controllers.
+    - [Plan and deploy on-premises Azure Active Directory Password Protection](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-deploy)  
+    This article shows how the basic components of Azure AD Password Protection work together in an on-premises Active Directory environment
+    ![](/images/azure-ad-password-protection.png)
+    - [Enable on-premises Azure Active Directory Password Protection](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-ban-bad-on-premises-operations)  
+    This article shows you how to enable Azure AD Password Protection for your on-premises environment.
 - Implement and manage tenant restrictions
-    - [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions)
+    - [Use tenant restrictions to manage access to SaaS cloud applications](https://docs.microsoft.com/en-us/azure/active-directory/manage-apps/tenant-restrictions)  
+    With tenant restrictions, organizations can control access to SaaS cloud applications, based on the Azure AD tenant the applications use for single sign-on. For example, you may want to allow access to your organization's Microsoft 365 applications, while preventing access to other organizations' instances of these same applications.
 
 ### [Plan, implement, and administer Conditional Access](https://docs.microsoft.com/en-us/learn/modules/plan-implement-administer-conditional-access/)
 - Plan security defaults
-    - [What are security defaults?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+    - [What are security defaults?](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)  
+    Managing security can be difficult with common identity-related attacks like password spray, replay, and phishing becoming more popular. Security defaults make it easier to help protect your organization from these attacks with preconfigured security settings
     - [Introducing security defaults](https://techcommunity.microsoft.com/t5/azure-active-directory-identity/introducing-security-defaults/ba-p/1061414)
 - Plan Conditional Access policies
-    - [What is Conditional Access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)
+    - [What is Conditional Access?](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/overview)  
+    Conditional Access is the tool used by Azure Active Directory to bring signals together, to make decisions, and enforce organizational policies. Conditional Access is at the heart of the new identity driven control plane.  
+    ![](/images/conditional-access-signal-decision-enforcement.png)
     - [Plan a Conditional Access deployment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/plan-conditional-access)
-    - [Manage external access with Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/7-secure-access-conditional-access)
-    - [Emergency access or break-glass accounts](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-access#user-exclusions)
-    - [Require terms of use](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use)
+    - [Manage external access with Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/7-secure-access-conditional-access)  
+    This article discusses applying Conditional Access policies to external users and assumes you don't have access to Entitlement Management functionality. Conditional Access policies can be and are used alongside Entitlement Management.
+    - [Emergency access or break-glass accounts](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-block-access#user-exclusions)  
+    Emergency access or break-glass accounts to prevent tenant-wide account lockout. In the unlikely scenario all administrators are locked out of your tenant, your emergency-access administrative account can be used to log into the tenant take steps to recover access.
+    - [Require terms of use](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use)  
+    Azure AD terms of use policies provide a simple method that organizations can use to present information to end users. This presentation ensures users see relevant disclaimers for legal or compliance requirements. This article describes how to get started with terms of use (ToU) policies.
 - Implement Conditional Access policy controls and assignments
     - [Common Conditional Access policies](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policy-common)
-    - [Sign-in risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)
-    - [User risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)
+    - [Sign-in risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk)  
+    Most users have a normal behavior that can be tracked, when they fall outside of this norm it could be risky to allow them to just sign in. You may want to block that user or maybe just ask them to perform multi-factor authentication to prove that they are really who they say they are. A sign-in risk represents the probability that a given authentication request isn't authorized by the identity owner. Organizations with Azure AD Premium P2 licenses can create Conditional Access policies incorporating Azure AD Identity Protection sign-in risk detections.
+    - [User risk-based Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-policy-risk-user)  
+    Microsoft works with researchers, law enforcement, various security teams at Microsoft, and other trusted sources to find leaked username and password pairs. Organizations with Azure AD Premium P2 licenses can create Conditional Access policies incorporating Azure AD Identity Protection user risk detections.
     - [Building a Conditional Access policy](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-policies)
-    - [User and group assignment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups)
+    - [User and group assignment](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-users-groups)  
+    A Conditional Access policy must include a user assignment as one of the signals in the decision process. Users can be included or excluded from Conditional Access policies. Azure Active Directory evaluates all policies and ensures that all requirements are met before granting access to the user
 - Test and troubleshoot Conditional Access policies
-    - [Troubleshoot using the What If tool in Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/what-if-tool)
-    - [Troubleshooting sign-in problems with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/troubleshoot-conditional-access)
-    - [Troubleshooting Conditional Access policy changes](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/troubleshoot-policy-changes-audit-log)
-    - [Monitor and troubleshoot continuous access evaluation](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-continuous-access-evaluation-troubleshoot)
+    - [Troubleshoot using the What If tool in Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/what-if-tool)  
+    How do you know what to expect from the Conditional Access policies in your environment? To answer this question, you can use the Conditional Access What If tool.
+    - [Troubleshooting sign-in problems with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/troubleshoot-conditional-access)  
+    The information in this article can be used to troubleshoot unexpected sign-in outcomes related to Conditional Access using error messages and Azure AD sign-ins log.
+    - [Troubleshooting Conditional Access policy changes](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/troubleshoot-policy-changes-audit-log)  
+    The Azure Active Directory (Azure AD) audit log is a valuable source of information when troubleshooting why and how Conditional Access policy changes happened in your environment. Audit log data is only kept for 30 days by default, which may not be long enough for every organization. Organizations can store data for longer periods by changing diagnostic settings in Azure AD
+    - [Monitor and troubleshoot continuous access evaluation](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-continuous-access-evaluation-troubleshoot)  
+    Administrators can monitor and troubleshoot sign in events where continuous access evaluation (CAE) is applied in multiple ways.
 - Implement application controls
-    - [Conditional Access: Cloud apps, actions, and authentication context](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)
-    - [Protect apps with Microsoft Cloud App Security Conditional Access App Control](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad)
-    - [Require app protection policy and an approved client app for cloud app access with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-protection-based-conditional-access)
+    - [Conditional Access: Cloud apps, actions, and authentication context](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-cloud-apps)  
+    Cloud apps, actions, and authentication context are key signals in a Conditional Access policy. Conditional Access policies allow administrators to assign controls to specific applications, actions, or authentication context.
+    - [Protect apps with Microsoft Cloud App Security Conditional Access App Control](https://docs.microsoft.com/en-us/cloud-app-security/proxy-intro-aad)  
+    Conditional Access App Control enables user app access and sessions to be monitored and controlled in real time based on access and session policies.
+    - [Require app protection policy and an approved client app for cloud app access with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/app-protection-based-conditional-access)  
+    This article presents three scenarios to configure Conditional Access policies for resources like Microsoft 365, Exchange Online, and SharePoint.
 - Implement session management
-    - [Conditional Access: Session](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-session)
-    - [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)
-    - [Onboard and deploy Conditional Access App Control for any app](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-any-app)
+    - [Configure authentication session management with Conditional Access](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime#persistence-of-browsing-sessions)  
+    A persistent browser session allows users to remain signed in after closing and reopening their browser window. 
+    - [Conditional Access: Session](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/concept-conditional-access-session)  
+    Within a Conditional Access policy, an administrator can make use of session controls to enable limited experiences within specific cloud applications.
+    - [Deploy Conditional Access App Control for featured apps](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-aad)  
+    Featured apps are already onboarded with both access and session controls (for example Salesforce, ServiceNow, ...)
+    - [Onboard and deploy Conditional Access App Control for any app](https://docs.microsoft.com/en-us/cloud-app-security/proxy-deployment-any-app)  
+    This article describes how to onboard and deploy custom line-of-business apps, non-featured SaaS apps, and on-premise apps hosted via the Azure Active Directory (Azure AD) Application Proxy with session controls.
 - Configure smart lockout thresholds
-    - [Protect user accounts from attacks with Azure Active Directory smart lockout](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout)
+    - [Protect user accounts from attacks with Azure Active Directory smart lockout](https://docs.microsoft.com/en-us/azure/active-directory/authentication/howto-password-smart-lockout)  
+    Smart lockout helps lock out bad actors that try to guess your users' passwords or use brute-force methods to get in. Smart lockout can recognize sign-ins that come from valid users and treat them differently than ones of attackers and other unknown sources. Attackers get locked out, while your users continue to access their accounts and be productive.
 
 ### [Manage Azure AD Identity Protection](https://docs.microsoft.com/en-us/learn/modules/manage-azure-active-directory-identity-protection/)
 - Review identity protection basics
