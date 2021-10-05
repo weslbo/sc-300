@@ -350,18 +350,30 @@ This study guide contains various links to official documentation in order to ge
 
 ### [Manage Azure AD Identity Protection](https://docs.microsoft.com/en-us/learn/modules/manage-azure-active-directory-identity-protection/)
 - Review identity protection basics
-    - [What is Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)
-    - [Security overview](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-security-overview)
-    - [What are risks?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-risks)
+    - [What is Identity Protection?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/overview-identity-protection)  
+    Identity Protection is a tool that allows organizations to accomplish three key tasks: 1) Automate the detection and remediation of identity-based risks. 2) Investigate risks using data in the porta and 3) export risk detection data to your SIEM.
+    - [Security overview](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-security-overview)  
+    The Security overview in the Azure portal gives you an insight into your organization’s security posture. It helps identify potential attacks and understand the effectiveness of your policies.
+    - [What are risks?](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-risks)  
+    Risk detections in Azure AD Identity Protection include any identified suspicious actions related to user accounts in the directory. Risk detections (both user and sign-in linked) contribute to the overall user risk score that is found in the Risky Users report. Risk can be detected at the User and Sign-in level and two types of detection or calculation Real-time and Offline.
 - Implement and manage user risk policy
-    - [Identity Protection policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies)
-    - [Configure and enable risk policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)
+    - [Identity Protection policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/concept-identity-protection-policies)  
+    Azure Active Directory Identity Protection includes three default policies that administrators can choose to enable:  
+        - Azure AD MFA registration policy
+        - Sign-in risk policy
+        - User risk policy
+    - [Configure and enable risk policies](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-risk-policies)  
+    This article gives recommendations on choosing acceptable risk
 - Configure Azure Active Directory multi-factor authentication registration policy
-    - [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+    - [Configure the Azure AD Multi-Factor Authentication registration policy](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)  
+    Azure AD Identity Protection helps you manage the roll-out of Azure AD Multi-Factor Authentication (MFA) registration by configuring a Conditional Access policy to require MFA registration no matter what modern authentication app you are signing in to.
 - Monitor, investigate, and remediate elevated risky users
-    - [Configure notifications](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)
-    - [How To: Investigate risk](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)
-    - [Remediate risks and unblock users](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock)
+    - [Configure notifications](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-configure-notifications)  
+    Azure AD Identity Protection sends two types of automated notification emails to help you manage user risk and risk detections: users at risk detected email and a weekly digest email
+    - [How To: Investigate risk](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-investigate-risk)  
+    Identity Protection provides organizations with three reports they can use to investigate identity risks in their environment. These reports are the risky users, risky sign-ins, and risk detections. Investigation of events is key to better understanding and identifying any weak points in your security strategy.
+    - [Remediate risks and unblock users](https://docs.microsoft.com/en-us/azure/active-directory/identity-protection/howto-identity-protection-remediate-unblock)  
+    After completing your investigation, you will want to take action to remediate the risk or unblock users. Organizations also have the option to enable automated remediation using their risk policies. Organizations should try to close all risk detections that they are presented with in a time period your organization is comfortable with. Microsoft recommends closing events as soon as possible because time matters when working with risk.
 
 ## [Part 3: Implement Access Management for Apps](https://docs.microsoft.com/en-us/learn/paths/implement-access-management-for-apps/)
 
