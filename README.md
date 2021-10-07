@@ -485,35 +485,108 @@ This study guide contains various links to official documentation in order to ge
 ### [Plan and implement entitlement management](https://docs.microsoft.com/en-us/learn/modules/plan-implement-entitlement-management/)
 
 - Define access packages
-- Exercise create and manage a resource catalog with Azure AD entitlement
+  - [What is Azure AD entitlement management?](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-overview)  
+  Azure Active Directory (Azure AD) entitlement management is an identity governance feature that enables organizations to manage identity and access lifecycle at scale, by automating access request workflows, access assignments, reviews, and expiration.
+  - [How many licenses must you have?](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-overview#how-many-licenses-must-you-have)
+  - [Tutorial: Manage access to resources in Azure AD entitlement management](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-access-package-first)  
+  In this tutorial, you learn how to:
+    - Create an access package with a group as a resource
+    - Allow a user in your directory to request access
+    - Demonstrate how an internal user can request the access package
+  - [Create a new access package in Azure AD entitlement management](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-access-package-create)
+  - [Tutorial: Manage the lifecycle of your group-based licenses in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-group-licenses)  
+  With Azure Active Directory (Azure AD), you can use groups to manage the licenses for your applications. You can make the management of these groups even easier by using entitlement management
+  - [Request access to an access package in Azure AD entitlement management](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-request-access)
 - Configure entitlement management
+  - [Delegation and roles in Azure AD entitlement management](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-delegate)
+  - [Create and manage a catalog of resources in Azure AD entitlement management](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-catalog-create)
 - Add terms of use acceptance report
+  - [Terms of use document](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use#terms-of-use-document)  
+  Azure AD terms of use policies use the PDF format to present content. The PDF file can be any content, such as existing contract documents, allowing you to collect end-user agreements during user sign-in. To support users on mobile devices, the recommended font size in the PDF is 24 point.
+  - [View report of who has accepted and declined](https://docs.microsoft.com/en-us/azure/active-directory/conditional-access/terms-of-use#view-report-of-who-has-accepted-and-declined)  
+  The Terms of use blade shows a count of the users who have accepted and declined. These counts and who accepted/declined are stored for the life of the terms of use policy.
 - Manage the lifecycle of external users with Azure AD identity governance
+  - [Tutorial - Onboard external users to Azure AD through an approval process](https://docs.microsoft.com/en-us/azure/active-directory/governance/entitlement-management-onboard-external-user)  
+  You can use entitlement management as a way of onboarding external users. This feature allows external users to request access to a set of resources and where you can set up approvals before they gain access to your directory. For external users onboarded through entitlement, you can manage their lifecycle through access packages. When their last access package expires, they'll be removed from your directory.
+  - [Billing model for Azure AD External Identities](https://docs.microsoft.com/en-us/azure/active-directory/external-identities/external-identities-pricing)  
+  Azure Active Directory (Azure AD) External Identities pricing is based on monthly active users (MAU), which is the count of unique users with authentication activity within a calendar month. This billing model applies to both Azure AD guest user collaboration (B2B) and Azure AD B2C tenants. MAU billing helps you reduce costs by offering a free tier and flexible, predictable pricing. In this article, learn about MAU billing and linking your Azure AD tenants to a subscription.
 
 ### [Plan, implement, and manage access review](https://docs.microsoft.com/en-us/learn/modules/plan-implement-manage-access-review/)
 
 - Plan for access reviews
+  - [What are Azure AD access reviews?](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview)  
+  Azure Active Directory (Azure AD) access reviews enable organizations to efficiently manage group memberships, access to enterprise applications, and role assignments. User's access can be reviewed on a regular basis to make sure only the right people have continued access. This article discusses:
+    - Why access reviews are important
+    - When you should use access reviews
+    - Where you do create reviews
+    - License requirements
+  - [Planning Azure Active Directory Access Reviews deployment](https://docs.microsoft.com/en-us/azure/active-directory/governance/deploy-access-reviews)  
+  Planning your Access Reviews deployment is essential to make sure you achieve your desired governance strategy for users in your organization.
 - Create access reviews for groups and apps
+  - [Create an access review of groups and applications in Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/create-access-review)  
+  Access to groups and applications for employees and guests changes over time. To reduce the risk associated with stale access assignments, administrators can use Azure Active Directory (Azure AD) to create access reviews for group members or application access. Microsoft 365 and Security group owners can also use Azure AD to create access reviews for group members (preview) as long as the Global or User Administrator enables the setting via Access Reviews Settings blade. If you need to routinely review access, you can also create recurring access reviews.
+  - [Manage user access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/manage-user-access-with-access-reviews)  
+   You can ask the users themselves or a decision maker to participate in an access review and recertify (or attest) to users' access. The reviewers can give their input on each user's need for continued access based on suggestions from Azure AD. When an access review is finished, you can then make changes and remove access from users who no longer need it.
+  - [Manage guest access with Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/manage-guest-access-with-access-reviews)  
+  You can ask guests themselves or a decision maker to participate in an access review and recertify (or attest) to the guests' access. The reviewers can give their input on each user's need for continued access, based on suggestions from Azure AD. When an access review is finished, you can then make changes and remove access for guests who no longer need it.
 - Monitor access review findings
+  - [Review access to groups and applications in Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/perform-access-review)  
+  This article will go over how a designated reviewer performs an access review for members of a group or users with access to an application.
+  - [Review access for yourself to groups or applications in Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/review-your-access)  
+  This article describes how to review your own access to a group or an application.
+  - [Create and manage downloadable access review history report (Preview) in Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-downloadable-review-history)  
+  With Azure Active Directory (Azure AD) Access Reviews, you can create a downloadable review history to help your organization gain more insight. The report pulls the decisions that were taken by reviewers when a report is created. These reports can be constructed to include specific access reviews, for a specific time frame, and can be filtered to include different review types and review results.
 - Manage licenses for access reviews
+  - [How many licenses must you have?](https://docs.microsoft.com/en-us/azure/active-directory/governance/access-reviews-overview#license-requirements)  
+  Using this feature requires an Azure AD Premium P2 license.
 - Automate access review management tasks
+  - [Complete an access review of groups and applications in Azure AD access reviews](https://docs.microsoft.com/en-us/azure/active-directory/governance/complete-access-review)
+  - [Complete an access review of Azure resource and Azure AD roles in PIM](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-complete-azure-ad-roles-and-resource-roles-review?toc=/azure/active-directory/governance/toc.json)
 - Configure recurring access reviews
 
 ### [Plan and implement privileged access](https://docs.microsoft.com/en-us/learn/modules/plan-implement-privileged-access/)
 
 - Define a privileged access strategy for administrative users
-- Configure Privileged Identity Management for Azure resources
-- Configure Privileged Identity Management for Azure Active Directory roles
-- Assign Azure Active Directory roles in Privileged Identity Management
-- Assign Azure resource roles in Privileged Identity Management
+  - [What is Azure AD Privileged Identity Management?](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-configure)  
+  Privileged Identity Management (PIM) is a service in Azure Active Directory (Azure AD) that enables you to manage, control, and monitor access to important resources in your organization. These resources include resources in Azure AD, Azure, and other Microsoft Online Services such as Microsoft 365 or Microsoft Intune.
+  - [License requirements to use Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/subscription-requirements)  To use Azure Active Directory (Azure AD) Privileged Identity Management (PIM), a directory must have a valid license. Furthermore, licenses must be assigned to the administrators and relevant users. This article describes the license requirements to use Privileged Identity Management.
+  - [What's the difference between Privileged Access groups and role-assignable groups?](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/concept-privileged-access-versus-role-assignable)  
+  Privileged Identity Management (PIM) supports the ability to enable privileged access on role-assignable groups. But because an available role-assignable group is a prerequisite for creating a privileged access group, this article explains the differences and how to take advantage of them.
 - Analyze Privileged Identity Management audit history and reports
+  - [View audit history for Azure AD roles in Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-how-to-use-audit-log)  
+  You can use the Privileged Identity Management (PIM) audit history to see all role assignments and activations within the past 30 days for all privileged roles. If you want to retain audit data for longer than the default retention period, you can use Azure Monitor to route it to an Azure storage account.
+  - [View activity and audit history for Azure resource roles in Privileged Identity Management](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/azure-pim-resource-rbac)
+  - [Discovery and Insights (preview) for Azure AD roles (formerly Security Wizard)](https://docs.microsoft.com/en-us/azure/active-directory/privileged-identity-management/pim-security-wizard)  
+  This feature shows you who is assigned to privileged roles in your organization and how to use PIM to quickly change permanent role assignments into just-in-time assignments. You can view or make changes to your permanent privileged role assignments in Discovery and Insights (preview). It's an analysis tool and an action tool.
 - Create and manage emergency access accounts
+  - [Manage emergency access accounts in Azure AD](https://docs.microsoft.com/en-us/azure/active-directory/roles/security-emergency-access)  
+  It is important that you prevent being accidentally locked out of your Azure Active Directory (Azure AD) organization because you can't sign in or activate another user's account as an administrator. You can mitigate the impact of accidental lack of administrative access by creating two or more emergency access accounts in your organization.
 
 ### [Monitor and maintain Azure Active Directory](https://docs.microsoft.com/en-us/learn/modules/monitor-maintain-azure-active-directory/)
 
 - Analyze and investigate sign-in logs to troubleshoot access issues
+  - [Sign-in logs in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-sign-ins)  
+  As an IT administrator, you want to know how your IT environment is doing. The information about your system’s health enables you to assess whether and how you need to respond to potential issues.
+  - [Audit logs in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-audit-logs)
+  - [Provisioning logs in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-provisioning-logs)
+  - [Usage and insights report in the Azure Active Directory portal](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/concept-usage-insights-report)  
+  With the usage and insights report, you can get an application-centric view of your sign-in data.
+  - [How to: Download logs in Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-download-logs)
+  - [Plan an Azure Active Directory reporting and monitoring deployment](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/plan-monitoring-and-reporting)  
+  This article presents the various design options and guides you to the right deployment strategy.
 - Review and monitor Azure Active Directory audit logs
+  - [Analyze Azure AD activity logs with Azure Monitor logs](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-analyze-activity-logs-log-analytics)  
+  After you integrate Azure AD activity logs with Azure Monitor logs, you can use the power of Azure Monitor logs to gain insights into your environment. You can also install the Log analytics views for Azure AD activity logs to get access to pre-built reports around audit and sign-in events in your environment.
+  - [Install and use the log analytics views for Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-install-use-log-analytics-views)
 - Connect data from Azure Active Directory to Azure Sentinel
+  - [What is Azure Sentinel?](https://docs.microsoft.com/en-us/azure/sentinel/overview)  
+  Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Azure Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response.
+  - [Connect Azure Active Directory (Azure AD) data to Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)  
+  You can use Azure Sentinel's built-in connector to collect data from Azure Active Directory and stream it into Azure Sentinel. 
 - Export logs to third-party security information and event management system
+  - [Integrate Azure Active Directory logs with ArcSight using Azure Monitor](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-arcsight)
+  - [Integrate Azure Active Directory logs with Splunk using Azure Monitor](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-splunk)
+  - [Integrate Azure Active Directory logs with SumoLogic using Azure Monitor](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-sumologic)
 - Analyze Azure Active Directory workbooks and reporting
-- Configure notifications
+  - [How to use Azure Monitor workbooks for Azure Active Directory reports](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  
+  This article explains how to use Monitor workbooks to understand the effect of your Conditional Access policies, to troubleshoot sign-in failures, and to identify legacy authentications.
