@@ -582,7 +582,7 @@ This study guide contains various links to official documentation in order to ge
   - [What is Azure Sentinel?](https://docs.microsoft.com/en-us/azure/sentinel/overview)  
   Microsoft Azure Sentinel is a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution. Azure Sentinel delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response.
   - [Connect Azure Active Directory (Azure AD) data to Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/connect-azure-active-directory)  
-  You can use Azure Sentinel's built-in connector to collect data from Azure Active Directory and stream it into Azure Sentinel. 
+  You can use Azure Sentinel's built-in connector to collect data from Azure Active Directory and stream it into Azure Sentinel.
 - Export logs to third-party security information and event management system
   - [Integrate Azure Active Directory logs with ArcSight using Azure Monitor](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-arcsight)
   - [Integrate Azure Active Directory logs with Splunk using Azure Monitor](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-integrate-activity-logs-with-splunk)
@@ -590,3 +590,4 @@ This study guide contains various links to official documentation in order to ge
 - Analyze Azure Active Directory workbooks and reporting
   - [How to use Azure Monitor workbooks for Azure Active Directory reports](https://docs.microsoft.com/en-us/azure/active-directory/reports-monitoring/howto-use-azure-monitor-workbooks)  
   This article explains how to use Monitor workbooks to understand the effect of your Conditional Access policies, to troubleshoot sign-in failures, and to identify legacy authentications.
+  
